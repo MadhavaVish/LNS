@@ -9,7 +9,6 @@ set_target_properties(
     PROPERTIES
     POSITION_INDEPENDENT_CODE 1
 )
-
 target_include_directories(
     LNS
     PUBLIC    
@@ -17,8 +16,7 @@ target_include_directories(
         $<INSTALL_INTERFACE:include>
         ${SPDLOG_INCLUDE_DIR}
 )
-
 target_link_libraries(
     LNS
-    spdlog::spdlog
+    ${SPDLOG_LIB}
 )
