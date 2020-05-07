@@ -1,7 +1,10 @@
 #include <iostream>
 #include <LNS.h>
 
-int main()
+class Sandbox : public LNS::Application
 {
-    std::cout << LNS::TestFunction() << std::endl;
+};
+
+LNS::Application* LNS::createApplication(){
+    return new Sandbox();
 }

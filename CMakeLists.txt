@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
+
 project(LearnNewShit)
 
 if(MSVC)
@@ -34,12 +35,14 @@ endif()
 add_subdirectory(LNS)
 add_subdirectory(Sandbox)
 
-set_target_properties(LNS
+set_target_properties(
+	LNS
     PROPERTIES
         LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/$<CONFIG>/lib
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/$<CONFIG>/bin
 )
-set_target_properties(Sandbox
-		PROPERTIES
+set_target_properties(
+	Sandbox
+	PROPERTIES
 		RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/$<CONFIG>/bin
 )
