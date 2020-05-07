@@ -5,5 +5,5 @@
 #include "src/Log.h"
 
 //----Entry Point----------
-#include "src/EntryPoint.h"
+#include "src/Entrypoint.h"
 //-------------------------
